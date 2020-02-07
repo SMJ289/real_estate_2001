@@ -33,6 +33,13 @@ def rooms_from_category(category)
     rooms_in_category
 end
 
+def area
+
+  @rooms.sum do |room|
+    room.length * room.width
+  end
+end
+
 
 
 end
